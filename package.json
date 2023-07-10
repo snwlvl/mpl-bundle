@@ -1,0 +1,88 @@
+{
+  "name": "mpl-bundle",
+  "version": "0.0.0",
+  "description": "NodeCG bundle for Arab Talents",
+  "homepage": "",
+  "author": {
+    "name": "snwlvl",
+    "email": "ronsnwlvl@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "netrunner",
+    "cards",
+    "overlay",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "2.1.11",
+    "dashboardPanels": [
+      {
+        "name": "card-overlay",
+        "title": "Card Search",
+        "width": 3,
+        "file": "card-search.html",
+        "headerColor": "#9f9bbd"
+      },
+      {
+        "name": "players",
+        "title": "Players",
+        "width": 2,
+        "file": "players.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "player-card-control",
+        "title": "Player Card Control",
+        "width": 2,
+        "file": "player-card-control.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "card-display.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "solo-card.html",
+        "width": 300,
+        "height": 418
+      },
+      {
+        "file": "lowerthird.html",
+        "width": 1920,
+        "height": 1080,
+        "singleInstance": false
+      },
+      {
+        "file": "playercard.html",
+        "width": 1920,
+        "height": 1080,
+        "singleInstance": false
+      }
+    ],
+    "mount": [
+      {
+        "directory": "netrunnercards",
+        "endpoint": "netrunnercards"
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "MIT",
+  "dependencies": {
+    "autocomplete.js": "^0.30.0",
+    "axios": "^0.18.0",
+    "bulma": "^0.7.1",
+    "gsap": "^2.1.3",
+    "npm": "^6.1.0"
+  }
+}
