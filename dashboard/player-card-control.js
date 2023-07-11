@@ -1,7 +1,7 @@
-const playerInput = document.getElementById('playerName')
-const teamInput = document.getElementById('teamName')
+const playerNameInput = document.getElementById('playerName')
+const teamNameInput = document.getElementById('teamName')
 
-function display() {
-    const data = {playerName: nameInput.value, teamName: teamInput.value}
+function update() {
+	const data = {playerName: playerNameInput.value, teamName: teamNameInput.value}
 	nodecg.sendMessage('showPlayercard', data);
 }
