@@ -1,7 +1,7 @@
 'use strict';
 
 nodecg.listenFor('showPlayercard', (newVal) => {
-    const container = document.getElementById('myVideo');
+    const container = document.getElementById('container');
     const playerName = document.getElementById('playerName');
     const teamName = document.getElementById('teamName');
 
