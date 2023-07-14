@@ -8,19 +8,19 @@ body {
   height: 300px;
 }
 
-#video {
+#myVideo {
   display: block;
-  width: 100%;
+  width: 400px;
   height: auto;
 }
 
 #playerName {
   position: absolute;
-  top: 50%;
+  bottom: -60px; 
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   font-size: 24px;
-  color: white;
+  color: red;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -28,11 +28,11 @@ body {
 
 #teamName {
   position: absolute;
-  bottom: 10px;
+  bottom: -80px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 18px;
-  color: white;
+  color: red;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
